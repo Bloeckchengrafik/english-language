@@ -1,14 +1,14 @@
 # The English Language today
 ## Can English continue to be a world-leading language?
 
-### Introduction
+### Introduction (Chris)
 
 - Head-Start with Accents
 - Title Slide - with doubt
 - Toc
 - Can English continue to be a world-leading language? - for the class
 
-### Status Quo
+### Status Quo (Justus)
 What the hell is english?
 British Empire colonized 1/4 of the world
 https://www.britannica.com/topic/British-Empire
@@ -18,11 +18,11 @@ https://www.britannica.com/topic/British-Empire
 Most spoken languages
 https://www.statista.com/statistics/266808/the-most-spoken-languages-worldwide/
 
-### Issues
+### Issues (Chris)
 Why couldn't English be the (or a) world-leading language?
 
-### Outlook
+### Outlook (Chris)
 
-### Conclusion
+### Conclusion (Justus)
 
 Can English continue to be a world-leading language? - for the class
