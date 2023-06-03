@@ -18,7 +18,7 @@ export default makeScene2D(function* (view) {
     let refOutlook: Reference<Txt> = createRef();
     let refConclusion: Reference<Txt> = createRef();
     view.add(<>
-        <Txt y={-200} fontSize={60} ref={refCurrentSituation}>The current Situation</Txt>
+        <Txt y={-200} fontSize={60} ref={refCurrentSituation}>About the English Language</Txt>
         <Txt y={-100} fontSize={60} ref={refIssues}>Issues</Txt>
         <Txt y={0} fontSize={60} ref={refOutlook}>Outlook</Txt>
         <Txt y={100} fontSize={60} ref={refConclusion}>Conclusion</Txt>
@@ -40,6 +40,4 @@ export default makeScene2D(function* (view) {
         refCurrentSituation().fontSize(50, 0.5),
         title().fill("#000", 0.5),
     )
-
-    yield* beginSlide("overview-out-2")
 });
