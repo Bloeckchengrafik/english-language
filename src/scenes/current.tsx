@@ -38,36 +38,49 @@ export default makeScene2D(function* (view) {
     let legendAngles = createRef<Rect>();
     let legendAnglesText = createRef<Txt>();
 
+    let groupRight = createRef<Rect>();
+
     view.add(<>
         <Rect scale={0.7} x={-550} y={170} height={1000} ref={rectText}>
-            <Txt fontSize={50} y={-400} width={1000} textAlign={"left"} fill={"white"} ref={indoEuropean} opacity={0}>Indo-European
+            <Txt fontSize={50} y={-400} width={1000} textAlign={"left"} fill={"white"} ref={indoEuropean}
+                 opacity={0}>Indo-European
                 language family</Txt>
-            <Txt fontSize={50} y={-300} width={1000} textAlign={"left"} fill={"white"} ref={westGermanic} opacity={0}>West
+            <Txt fontSize={50} y={-300} width={1000} textAlign={"left"} fill={"white"} ref={westGermanic}
+                 opacity={0}>West
                 Germanic Language</Txt>
-            <Txt fontSize={50} y={-200} width={1000} textAlign={"left"} fill={"white"} ref={angles} opacity={0}>Named after the Angles</Txt>
+            <Txt fontSize={50} y={-200} width={1000} textAlign={"left"} fill={"white"} ref={angles} opacity={0}>Named
+                after the Angles</Txt>
         </Rect>
-        <Rect scale={0.7} x={300} ref={rectMap} width={1800} height={1000} clip={true} opacity={0}>
-            <Img src={worldMap} ref={worldMapRef}/>
-            <Img src={worldMapIndoEuropean} ref={worldMapIndoEuropeanRef} opacity={0}/>
-            <Img src={europeWestgermanic} ref={worldMapWestGermanicRef} opacity={0}/>
-            <Img src={europeAngles} ref={worldMapAnglesRef} opacity={0} y={900} scale={4}/>
-        </Rect>
-        <Rect y={400}>
-            <Rect>
-                <Rect fill={"#eacdc2"} width={32} height={32} ref={legendWorld} radius={10} opacity={0}></Rect> <Txt
-                fontSize={32} x={130} width={200} textAlign={"left"} fill={"white"} ref={legendWorldText}></Txt>
+        <Rect ref={groupRight}>
+            <Rect scale={0.7} x={300} ref={rectMap} width={1800} height={1000} clip={true} opacity={0}>
+                <Img src={worldMap} ref={worldMapRef}/>
+                <Img src={worldMapIndoEuropean} ref={worldMapIndoEuropeanRef} opacity={0}/>
+                <Img src={europeWestgermanic} ref={worldMapWestGermanicRef} opacity={0}/>
+                <Img src={europeAngles} ref={worldMapAnglesRef} opacity={0} y={900} scale={4}/>
             </Rect>
-            <Rect y={50}>
-                <Rect fill={"#7475b4"} width={32} height={32} ref={legendIndoEuropean} radius={10} opacity={0}></Rect> <Txt
-                fontSize={32} x={130} width={200} textAlign={"left"} fill={"white"} ref={legendIndoEuropeanText}></Txt>
-            </Rect>
-            <Rect x={350}>
-                <Rect fill={"#79b474"} width={32} height={32} ref={legendWestGermanic} radius={10} opacity={0}></Rect> <Txt
-                fontSize={32} x={130} width={200} textAlign={"left"} fill={"white"} ref={legendWestGermanicText}></Txt>
-            </Rect>
-            <Rect x={350} y={50}>
-                <Rect fill={"#b47474"} width={32} height={32} ref={legendAngles} radius={10} opacity={0}></Rect> <Txt
-                fontSize={32} x={130} width={200} textAlign={"left"} fill={"white"} ref={legendAnglesText}></Txt>
+            <Rect y={400}>
+                <Rect>
+                    <Rect fill={"#eacdc2"} width={32} height={32} ref={legendWorld} radius={10} opacity={0}></Rect> <Txt
+                    fontSize={32} x={130} width={200} textAlign={"left"} fill={"white"} ref={legendWorldText}></Txt>
+                </Rect>
+                <Rect y={50}>
+                    <Rect fill={"#7475b4"} width={32} height={32} ref={legendIndoEuropean} radius={10}
+                          opacity={0}></Rect> <Txt
+                    fontSize={32} x={130} width={200} textAlign={"left"} fill={"white"}
+                    ref={legendIndoEuropeanText}></Txt>
+                </Rect>
+                <Rect x={350}>
+                    <Rect fill={"#79b474"} width={32} height={32} ref={legendWestGermanic} radius={10}
+                          opacity={0}></Rect> <Txt
+                    fontSize={32} x={130} width={200} textAlign={"left"} fill={"white"}
+                    ref={legendWestGermanicText}></Txt>
+                </Rect>
+                <Rect x={350} y={50}>
+                    <Rect fill={"#b47474"} width={32} height={32} ref={legendAngles} radius={10} opacity={0}></Rect>
+                    <Txt
+                        fontSize={32} x={130} width={200} textAlign={"left"} fill={"white"}
+                        ref={legendAnglesText}></Txt>
+                </Rect>
             </Rect>
         </Rect>
     </>)
@@ -118,4 +131,8 @@ export default makeScene2D(function* (view) {
     );
 
     yield* beginSlide("end");
+
+    yield* all(
+        groupRight().opacity(0, 1),
+    );
 });
