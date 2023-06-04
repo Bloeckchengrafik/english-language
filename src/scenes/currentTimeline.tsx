@@ -119,35 +119,35 @@ export default makeScene2D(function* (view) {
     </>)
 
 
-    yield* timelineWidth(1.8, 1)
-    yield* shownBars(10, 1, linear)
+    yield* timelineWidth(1.8, 0.75)
+    yield* shownBars(10, 0.25, linear)
 
     yield* beginSlide("earlyModern")
 
     yield* all(
-        earlyModernEnglishVectorDraw(1, 1),
-        earlyModernEnglishText().opacity(1, 1)
+        earlyModernEnglishVectorDraw(1, 0.75),
+        earlyModernEnglishText().opacity(1, 0.75)
     )
 
     yield* beginSlide("modern")
 
 
     yield* all(
-        modernEnglishVectorDraw(1, 1),
-        modernEnglishText().opacity(1, 1)
+        modernEnglishVectorDraw(1, 0.75),
+        modernEnglishText().opacity(1, 0.75)
     )
 
     yield* beginSlide("vowelShift")
 
     yield* all(
-        vowelShiftVectorDraw(1, 1),
-        vowelShiftText().opacity(1, 1)
+        vowelShiftVectorDraw(1, 0.75),
+        vowelShiftText().opacity(1, 0.75)
     )
 
     yield* beginSlide("end")
 
     yield* all(
-        rectGraph().opacity(0, 1),
+        rectGraph().opacity(0, 0.75),
         rectText().x(-1500, 1),
     )
 });

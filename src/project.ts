@@ -5,7 +5,8 @@ import overview from "./scenes/overview?scene";
 import current from "./scenes/current?scene";
 import currentInfluences from "./scenes/currentInfluences?scene";
 import currentTimeline from "./scenes/currentTimeline?scene";
+import currentAmounts from "./scenes/currentAmounts?scene";
 
 export default makeProject({
-  scenes: [title, overview, current, currentInfluences, currentTimeline],
+  scenes: [title, overview, current, currentInfluences, currentTimeline, currentAmounts],
 });

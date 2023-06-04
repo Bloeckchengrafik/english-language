@@ -118,8 +118,8 @@ export default makeScene2D(function* (view) {
     yield* dotRight().x(400, 0.5)
     yield* all(
         // move in a circular motion
-        dotRightContainer().rotation(360, 1.5),
-        otherPart().endAngle(360, 1.5),
+        dotRightContainer().rotation(360, 1),
+        otherPart().endAngle(360, 1),
     )
     yield* all(
         dotLeft().opacity(0, 0.5),
@@ -134,19 +134,19 @@ export default makeScene2D(function* (view) {
     let startProperNames = startGreek - 14.4;
 
     yield* all(
-        otherPart().startAngle(startOther, 2),
-        latinPart().startAngle(startLatin, 2),
-        frenchPart().startAngle(startFrench, 2),
-        germanicPart().startAngle(startGermanic, 2),
-        greekPart().startAngle(startGreek, 2),
-        properNamesPart().startAngle(startProperNames, 2),
-        otherPart().endAngle(360, 2),
-        latinPart().endAngle(startOther, 2),
-        frenchPart().endAngle(startLatin, 2),
-        germanicPart().endAngle(startFrench, 2),
-        greekPart().endAngle(startGermanic, 2),
-        properNamesPart().endAngle(startGreek, 2),
-        rectGraph().rotation(45, 2),
+        otherPart().startAngle(startOther, 1),
+        latinPart().startAngle(startLatin, 1),
+        frenchPart().startAngle(startFrench, 1),
+        germanicPart().startAngle(startGermanic, 1),
+        greekPart().startAngle(startGreek, 1),
+        properNamesPart().startAngle(startProperNames, 1),
+        otherPart().endAngle(360, 1),
+        latinPart().endAngle(startOther, 1),
+        frenchPart().endAngle(startLatin, 1),
+        germanicPart().endAngle(startFrench, 1),
+        greekPart().endAngle(startGermanic, 1),
+        properNamesPart().endAngle(startGreek, 1),
+        rectGraph().rotation(45, 1),
     )
 
     yield* beginSlide("current-influences-0")
