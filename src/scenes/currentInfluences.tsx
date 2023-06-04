@@ -149,10 +149,17 @@ export default makeScene2D(function* (view) {
         rectGraph().rotation(45, 2),
     )
 
+    yield* beginSlide("current-influences-0")
+
     yield* all(
         legend().opacity(1, 0.5),
         influencedBy().opacity(1, 0.5)
     )
 
     yield* beginSlide("current-influences-1")
+
+    yield* all(
+        legend().opacity(0, 0.5),
+        rectGraph().opacity(0, 0.5),
+    )
 });
