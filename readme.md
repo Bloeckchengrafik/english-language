@@ -3,7 +3,7 @@
 
 ### Introduction (Chris)
 
-- Head-Start with Accents
+- Head-Start with Accents????
 - Title Slide - with doubt
 - Toc
 - Can English continue to be a world-leading language? - for the class
@@ -20,10 +20,15 @@ https://www.statista.com/statistics/266808/the-most-spoken-languages-worldwide/
 
 ### Issues (Chris)
 Why couldn't English be the (or a) world-leading language?
+- Sometimes hard to understand - example with the slide title
+- Challenged by other languages (for example Chinese)
 
 ### Outlook (Chris)
+
+- English is the most spoken language in the world
+- 99% of the internet is in english
+- forget it, it's not going anywhere (or is it?)
 
 ### Conclusion (Justus)
 
 Can English continue to be a world-leading language? - for the class
-sus
