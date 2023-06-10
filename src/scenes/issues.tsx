@@ -1,4 +1,4 @@
-import {CodeBlock, edit, lines, range} from '@motion-canvas/2d/lib/components/CodeBlock';
+import {CodeBlock, edit, lines, range, remove} from '@motion-canvas/2d/lib/components/CodeBlock';
 import {makeScene2D} from '@motion-canvas/2d/lib/scenes';
 import {beginSlide, createRef} from "@motion-canvas/core/lib/utils";
 import {DEFAULT} from "@motion-canvas/core/lib/signals";
@@ -31,7 +31,7 @@ export default makeScene2D(function* (view) {
 
     yield* beginSlide("remove")
     yield* title().edit(0.75)`Issues ${edit("arising from the pervasive ubiquity \nof", "with")} English ${edit("as a", "being the")} world-leading language, \nbeset by an array of quandaries.`
-    yield* title().edit(0.75)`Issues with English being the world-leading language${edit(", \nbeset by an array of quandaries.", "")}`
+    yield* title().edit(0.75)`Issues with English being the world-leading language${remove(", \nbeset by an array of quandaries.")}`
     yield* title().selection(DEFAULT, 0.2)
     yield* title().y(-400, 0.75)
 
@@ -48,7 +48,7 @@ export default makeScene2D(function* (view) {
     view.add(<>
             <Rect scale={0.7} x={-450} y={170} height={1000}>
                 <Txt fontSize={50} y={-400} width={1300} textAlign={"left"} fill={"white"}
-                     opacity={0} ref={hardToUnderstand}>Can be hard to understand for non-native speakers</Txt>
+                     opacity={0} ref={hardToUnderstand}>Can be difficult to understand for non-native speakers</Txt>
                 <Txt fontSize={50} y={-300} width={1300} textAlign={"left"} fill={"white"}
                      opacity={0} ref={challenge}>Challenged by other languages, namely Chinese</Txt>
                 <Txt fontSize={50} y={-200} width={1300} textAlign={"left"} fill={"white"}
