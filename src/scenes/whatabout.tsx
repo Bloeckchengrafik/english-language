@@ -196,4 +196,11 @@ export default makeScene2D(function* (view) {
     view.add(<Txt fontSize={70} y={0} fill={"white"} ref={forgetIt}></Txt>)
     yield* forgetIt().text("Forget it", 1)
     yield* forgetIt().text("Forget it, it's not going anywhere", 1)
+
+    yield* beginSlide("whatabout-5")
+
+    yield* all(
+        forgetIt().opacity(0, 0.75),
+        title().text("", 0.75)
+    )
 });
