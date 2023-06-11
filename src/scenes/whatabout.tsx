@@ -34,7 +34,7 @@ export default makeScene2D(function* (view) {
                  opacity={0} ref={mostWidely}>English is the most widely spoken language in the world</Txt>
             <Txt fontSize={50} y={-300} width={1400} textAlign={"left"} fill={"white"}
                     opacity={0} ref={fiftyEight}>Most of the internet is in English</Txt>
-            <Txt fontSize={50} y={-200} width={1400} textAlign={"left"} fill={"white"}
+            <Txt fontSize={50} x={100} y={-200} width={1600} textAlign={"left"} fill={"white"}
                     opacity={0} ref={takeALongTime}>It would take a long time for people to get used to a new language</Txt>
         </Rect>
         <Img scale={0.7} x={450} ref={imgAmount} width={1200} height={700} clip={true} opacity={0} stroke={BLUE}

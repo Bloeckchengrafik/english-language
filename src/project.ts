@@ -8,7 +8,8 @@ import currentTimeline from "./scenes/currentTimeline?scene";
 import currentAmounts from "./scenes/currentAmounts?scene";
 import issues from "./scenes/issues?scene";
 import whatabout from "./scenes/whatabout?scene";
+import conclusion from "./scenes/summary?scene";
 
 export default makeProject({
-  scenes: [title, overview, current, currentInfluences, currentTimeline, currentAmounts, issues, whatabout],
+  scenes: [title, overview, current, currentInfluences, currentTimeline, currentAmounts, issues, whatabout, conclusion],
 });
